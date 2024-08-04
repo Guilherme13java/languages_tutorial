@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de HTML</title>
+    <style>
+        body{
+            background-color: rgb(25, 25, 25);
+            color: rgb(200, 200, 200);
+            width: 100%;
+            height: 100%;
+        }
+        code{
+            background-color: black;
+            color: rgb(200, 200, 255);
+        }
+        h1, h2, h3{
+            color: yellow;
+            text-align: center;
+        }
+        h2{
+            font-size: 2em;
+        }
+        pre{
+            font-size: 1em;
+        }
+        #Titulo{
+            font-family: 'Times New Roman', Times, serif;
+            border: 0.1em dashed;
+        }
+        div {
+            /*border: 5px solid;*/
+            align-items: center;
+            display: flex;
+        }
+        span {
+            color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="Titulo">Guia de HTML5</h1>
+    <a href="https://www.w3schools.com/TAGS/tag_iframe.asp" target="_blank">Domentacao HTML</a><br>
+    <a href="https://www.w3schools.com/cssref/index.php" target="_blank">Documentacao CSS</a>
+    <p>Sumário</p>
+    <summary>
+        <li>HTML</li>
+        <ul>
+            <li>Formatação de Texto</li>
+            <li>Mídia</li>
+            <li>Listas</li>
+            <li>Links</li>
+        </ul>
+        <li>CSS</li>
+        <ul>
+            <li>Introdução</li>
+        </ul>
+    </summary>
+    <h2>HTML</h2>
+    <img style="margin: auto; display: flex;" src="images/HTML.png">
+    <h3>Introdução</h3>
+    <h3>Tag &lt;!DOCTYPE&gt;&gt;</h3>
+    <p>Define o tipo do documento, em html usamos: </p>
+    <code>!DOCTYPE html</code>
+    <h3>Tag &lt;html&gt;</h3>
+    <h3>Tag &lt;meta&gt;</h3>
+    <h3>Tag &lt;title&gt;</h3>
+    <h3>Tag &lt;body&gt;</h3>
+    <pre>
+    Crie um arquivo chamado de index.html e edite ele com o Visual Studio Code.
+digite ! e aperte tab, e altere até que fique assim:
+    <div><code>
+    <span>&lt;!--Isso é um comentário, comentários não são lidos pelo navegador
+não precisa escrever os comentários
+--&gt;</span>
+
+&lt;!DOCTYPE html&gt; <span>&lt;!--Especifica que o arquivo é em HTML--&gt;</span>
+&lt;html lang="en"&gt; <span>&lt;!--Abre o código html e especifica a linguagem da página--&gt;</span>
+&lt;head&gt; <span>&lt;!--A cabeça da página, onde fica todas as configurações--&gt;</span>
+    &lt;meta charset="UTF-8"&gt; <span>&lt;!--indica que os caracteres são em UTF-8, onde tem acentuações e outros caracteres específicos--&gt;</span>
+    &lt;meta name="vierport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt; <span>&lt;!--Abre a tag body, onde está a semântica do site--&gt;</span>
+    &lt;p&gt;Olá Mundo&lt;/p&gt; <span>&lt;!--abre e fecha a tag parágrafo, fazendo seu primeiro olá mundo--&gt;</span>
+&lt;/body&gt;
+&lt;/html&gt;
+    </div>
+</code>
+    </pre>
+    <h3>Formatação de Texto</h3>
+    <pre><div><code>
+&lt;h1&gt;Isto é um Título&lt;/h1&gt;
+
+&lt;h2&gt;Isto é um Subtítulo&lt;/h2&gt;
+&lt;h6&gt;Você pode criar Subtítulos h2, h3, h4, h5 e h6 &lt;/h6&gt;
+
+&lt;!--Isto é um comentário--&gt;
+
+&lt;br&gt; Isto é uma quebra de linha
+
+&lt;p&gt;Isto é um parágrafo&lt;/p&gt;
+
+&lt;code&gt;Isto é um código&lt;/code&gt;
+
+&lt;pre&gt;
+Isto é um parágrafo que quebra linhas
+de acordo com a forma escrita no código
+sem o uso de &lt;br&gt;
+&lt;/pre&gt;
+    </code></div></pre>
+    <h2>Mídia</h2>
+    <p>Você pode colocar imagens</p>
+    <p>Você pode color vídeos</p>
+    <h2>Links</h2>
+    <p>Você pode colocar Links</p>
+    <h2>Listas</h2>
+    <p>É possivel criar Listas Não-Ordenadas através da tag &lt;ul&gt;</p>
+<pre><div><code>
+&lt;!--
+Alguns possíves parâmetros são:
+&lt;ul type="square"&gt;
+&lt;ul type="disc"&gt;
+&lt;ul type="circle"&gt;
+--&gt;
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;li&gt;Item 4&lt;/li&gt;
+    &lt;li&gt;Item 5&lt;/li&gt;
+&lt;/ul&gt;
+</code></div></pre>
+    <p>Resultado:</p>
+<pre>
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+<li>Item 4</li>
+<li>Item 5</li>
+</ul>
+</pre>
+    <p>Também é possível criar Listas Ordenadas com a tag &lt;ol&gt;</p>
+    <pre><div><code>
+&lt;!--
+Alguns possíveis parâmetros são:
+&lt;ul type="a"&gt; para Númeração com Letras Minúsculas
+&lt;ul type="A"&gt; para Númeração por Letras Maiúsculas
+&lt;ul type="1" start=1&gt; para Númeração Decimal
+&lt;ul type="I"&gt; para Númeração Romana Maiúscula
+&lt;ul type="i"&gt; para Númeração Romana Minuscula
+--&gt;
+&lt;ul&gt;
+&lt;li&gt;Item 1&lt;/li&gt;
+&lt;li&gt;Item 2&lt;/li&gt;
+&lt;li&gt;Item 3&lt;/li&gt;
+&lt;li&gt;Item 4&lt;/li&gt;
+&lt;li&gt;Item 5&lt;/li&gt;
+&lt;/ul&gt;
+    </code></div></pre>
+    <p>Resultado:</p>
+    <ol type="1" start=1>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+    <p>Você pode criar sumários com a Tag &lt;summary&gt;</p>
+    <pre><div><code>
+&lt;summary&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;li&gt;Item 4&lt;/li&gt;
+    &lt;li&gt;Item 5&lt;/li&gt;
+&lt;/summary&gt;
+    </div></code></pre>
+    <p>Resultado:</p>
+    <summary>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </summary>
+    <p>Você pode criar um Dicionário &lt;d1&gt; com o Título &lt;dt&gt; e seu Significado &lt;dd&gt; <br>Exemplo:</p>
+    <pre><code><div>
+&lt;d1&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;Linguagem de Marcação&gt;/dd&gt;
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Linguagem de Estilização&gt;/dd&gt;
+&lt;/d1&gt;
+    </code></div></pre>
+    <h2>Span e Div</h2>
+    <p>Span</p>
+    <p>Div</p>
+    <h2>CSS</h2>
+    <img style="margin: auto; display: flex;" src="images/CSS.png">
+    <h3 style="text-align: center;">Introdução</h3>
+    <h3>Existem 3 formas de implementar as CSS</h3>
+    <ul type="square">
+        <li>Estilo Inline</li>
+        <p>Quando você coloca diretamente CSS nos parâmetros da tag HTML
+        <code>&lt;p<span> style="color: red"</span>&gt; Estilo Inline&lt;/p&gt;</code></p>
+        <li>Estilo Interno</li>
+        <p>Quando você usa a tag style no head do arquivo HTML para usar as CSS</p>
+<pre><code style="color: tomato">
+&lt;style&gt;
+p {
+    color: red;
+}
+&lt;/style&gt;
+</code></pre>
+        <li>Estilo Externo</li>
+        <p>Quando você aplica o Estilo fora do arquivo HTML, recomendado usar quando for aplicar em vários sites</p>
+    <p>style.css:</p>
+    <pre><code style="color: tomato">
+p {
+    color: red;
+}
+</pre></code>
+<p>index.html (&lt;head&gt;):</p>
+<pre><code>
+&lt;link href="style.css" rel="stylesheet" type="text/css"/&gt;
+</pre></code>
+    </ul>
+</body>
+</html>
