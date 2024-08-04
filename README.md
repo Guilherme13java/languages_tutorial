@@ -1,2 +1,2 @@
 # languages_tutorial
-Tutorial de HTML&amp;CSS
+> Este repositório apresenta um Tutorial de HTML&amp;CSS
