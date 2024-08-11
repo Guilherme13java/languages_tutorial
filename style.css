@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(25, 25, 25);
+    color: white;
+    margin: 10%;
+    margin-top: 5%;
+    max-width: 80%;
+}
+code{
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    border: 0.1em gray solid;
+    border-radius: .5em;
+    display: inline-block;
+    width: auto;
+    white-space: pre-wrap;
+}
+h1, h2, h3{
+    color: orange;
+    font-family: verdana, arial;
+    text-align: center;
+}
+main{
+    background-color: rgb(50, 50, 50);
+    border: .5em orange solid;
+    border-radius: 1em;
+    box-shadow: .5em .5em .5em black, -.5em -.5em .5em rgb(100, 100, 100);
+    font-family: verdana, arial;
+}
+main > *{
+    margin: 1em;
+}
+.commenth{
+    color: gray;
+    background-color: transparent;
+}
+.commentc{
+    color: green;
+    background-color: transparent;
+}
+p{
+    word-wrap: break-line;
+}
+span{
+    text-align: left;
+    color: gray;
+}
+h1{
+    text-shadow: .1em .1em .1em black;
+    text-decoration-line: underline;
+}

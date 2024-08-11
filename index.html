@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia do Desenvolvedor</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: rgb(50, 50, 50);
+            color: white;
+        }
+        header{
+            background-color: black;
+            display: inline-block;
+            margin: auto;
+            padding: 0%;
+            width: 100%;
+            padding-top: 10%;
+            justify-content: center;
+            font-family: Courier;
+            text-shadow: 1px 1px 0px black, -1px -1px 0px black;
+            border-bottom: green 1em solid;
+        }
+        header > h1{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 10%;
+        }
+        header > p{
+            font-family: monospace, arial;
+            color: lightgreen;
+            display: hidden;
+            transform: translate(-50, -50%);
+        }
+        main{
+            margin: 2%;
+            background-color: gray;
+            border: 5px black solid;
+            border-radius: 1em;
+            width: 50;
+        }
+        main > details > ul >  li > a > button{
+            /*border-top: solid white;*/
+            background-color: gray;
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Guia do Desenvolvedor</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi sunt placeat et recusandae eveniet! Eos quibusdam porro perspiciatis perferendis qui fugit repellat quis. Impedit quaerat natus eveniet maxime itaque illo?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam asperiores perferendis itaque labore, rem provident esse, impedit laboriosam facere quisquam laborum, aperiam quas placeat nulla dolores voluptate tempora. Aperiam, voluptatibus?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam culpa eius quo maiores fuga delectus magni voluptatum similique enim animi architecto exercitationem dolorem, ea qui necessitatibus quisquam natus iure repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptates, fugit facilis corporis harum ab accusantium sapiente, cupiditate enim similique hic doloribus molestias saepe tempore, quo iusto molestiae deleniti qui.
+        </p>
+    </header>
+    <main>
+        <h2>Guias</h2>
+        <details><summary>Linguages de Marcação/Estilização</summary>
+            <ul>
+                <li>
+                    <a href="HTML5.html"><button>HTML</button></a>
+                </li>
+                <li>
+                    <a href="CSS3.html"><button>CSS</button></a>
+                </li>
+            </ul>
+        </details>
+        <details><summary>Linguagens de Programação</summary>
+            <p>Ainda não há guias disponíveis</p>
+        </details>
+    </main>
+    <footer>
+        <p>Feito por <a href="instagram.com/guimo81" rel="_blank">@guimo81</a></p>
+    </footer>
+</body>
+</html>

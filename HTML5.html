@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia HTML5</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <main>
+    <h1 id="HTMLTITLE">Guia de HTML5</h1>
+    <a href="https://www.w3schools.com/TAGS/tag_iframe.asp" target="_blank">Domentacao HTML</a><br>
+    <hr>
+    <ul>
+        <li>HTML5</li>
+        <ul>
+            <li>Formatação de Texto</li>
+            <li>Mídia</li>
+            <li>Listas</li>
+            <li>Links</li>
+        </ul>
+    </ul>
+    <img style="margin: auto; display: flex;" src="images/HTML.png" width="25%">
+    <h3>Introdução</h3>
+    <h3>Tag &lt;!DOCTYPE&gt;</h3>
+    <p>Define o tipo do documento, em html usamos: </p>
+    <code>&lt;!DOCTYPE html&gt;</code>
+    <h3>Tag &lt;html&gt;</h3>
+    <p>Abre seu código HTML, deve ser usada dessa forma: </p>
+    <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt; <mark class="commenth">&lt;!--Linguagem do Site--&gt;</mark>
+&lt;/html&gt;
+    </code>
+    <h3>Tag &lt;head&gt;</h3>
+    <p>Define a cabeça do código HTML, e é onde se define as "regras" da página</p>
+<code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;/html&gt;
+</code>
+    <h3>Tag &lt;body&gt;</h3>
+    <p>Define o corpo do cógido HTML, é onde se fica os elementos da página</p>
+    <code>
+&lt;!DOCTYPE&gt;
+&lt;html lang="pt-br"&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </code>
+    <h3>Tag &lt;meta&gt;</h3>
+    <p>São tags usadas para fornercer metadados para o código html<br>Possui alguns parâmetros como: </p>
+    <code>&lt;meta charset="UTF-8"&gt;</code><p>O tipo de caracteres vai ser UTF-8, que possui acentuações</p>
+    <code>&lt;meta name="viewport" content="device-width", initial-scale=1.0"</p><p>O tamanho da tela será o mesmo do usuário, e o site vai aparecer sem nenhum zoom inicial</code>
+    <h3>Tag &lt;title&gt;</h3>
+    <p>Defino um título que aparecerá na aba da página</p>
+    <code>&lt;title&gt;Meu título&lt;/title&gt;</code>
+    <h3>Tag &lt;!-- ... --&gt;</h3>
+    <p>Define um comentário que não será lido pelo navegador</p>
+    <code><mark class="commenth">&lt;!--Isto é um comentário--&gt;</mark></code>
+    <h2>Primeiro "Olá Mundo!"</h2>
+    <hr>
+    <p>
+    Crie um arquivo chamado de index.html e edite ele com o Visual Studio Code.<wbr>
+digite ! e aperte tab, e altere até que fique assim:
+    </p>
+    <code>
+    <mark class="commenth">
+    &lt;!--Isso é um comentário, comentários não são lidos pelo navegador
+não precisa escrever os comentários
+--&gt;</mark>
+
+&lt;!DOCTYPE html&gt; <mark class="commenth">&lt;!--Especifica que o arquivo é em HTML--&gt;</mark>
+&lt;html lang="en"&gt; <mark class="commenth">&lt;!--Abre o código html e especifica a linguagem da página--&gt;</mark>
+&lt;head&gt; <mark class="commenth">&lt;!--A cabeça da página, onde fica todas as configurações--&gt;</mark>
+    &lt;meta charset="UTF-8"&gt; <mark class="commenth">&lt;!--indica que os caracteres são em UTF-8, onde tem acentuações e outros caracteres específicos--&gt;</mark><br>
+    &lt;meta name="vierport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt; <mark class="commenth">&lt;!--Abre a tag body, onde está a semântica do site--&gt;</mark>
+    &lt;p&gt;Olá Mundo&lt;/p&gt; <mark class="commenth">&lt;!--abre e fecha a tag parágrafo, fazendo seu primeiro olá mundo--&gt;</mark>
+&lt;/body&gt;
+&lt;/html&gt;
+    </code>
+    <h2>Formatação de Texto</h2>
+    <hr>
+    <h3>Tag &lt;h1-h6&gt;</h3>
+    <p>Você pode criar um título com a tag &lt;h1&gt;</p>
+    <code>&lt;h1&gt;Título&lt;/h1&gt;</code>
+    <p>E criar subtítulos com a tag h2 até h6</p>
+    <code>
+&lt;h2&gt;Subtítulo h2&lt;/h2&gt;
+&lt;h3&gt;Subtítulo h3&lt;/h2&gt;
+&lt;h4&gt;Subtítulo h4&lt;/h2&gt;
+&lt;h5&gt;Subtítulo h5&lt;/h2&gt;
+&lt;h6&gt;Subtítulo h6&lt;/h2&gt;</code>
+    <h3>Tag &lt;p&gt;</h3>
+    <p>Cria um parágrafo sem quebras de linha de acordo com o documento HTML</p>
+    <code>&lt;p&gt;Isto é um parágrafo&lt;/p&gt;</code>
+    <h3>Tag &lt;br&gt;</h3>
+    <p>Cria uma quebra de linha</p>
+    <code>&lt;br&gt;</code>
+    <h3>Tag &lt;wbr&gt;</h3>
+    <p>Cria uma quebra de linha opcional do navegador</p>
+    <code>&lt;wbr&gt;</code>
+    <h3>Tag &lt;hr&gt;</h3>
+    <p>Cria uma linha horizontal</p>
+    <code>&lt;hr&gt;</code>
+    <h3>Tag &lt;code&gt;</h3>
+    <p>Cria um código com letras monoespaçadas</p>
+    <code>&lt;code&gt;Isto é um código&lt;/code&gt;</code>
+    <h3>Tag &lt;pre&gt;</h3>
+    <p>Cria um parágrafo que quebra as linhas automaticamente de acordo como foi escrito no documento HTML</p>
+    <code>&lt;pre&gt;
+Isto é um parágrafo que quebra linhas
+de acordo com a forma escrita no código
+sem o uso de &lt;br&gt;
+&lt;/pre&gt;
+    </code>
+    <h3>Tag &lt;b&gt;</h3>
+    <p>Cria um texto <b>Negrito Não-Semântico</b> (Não recomendado)</p>
+    <code>&lt;b&gt;Negrito Não-Semântico (Não recomendado)&lt;/b&gt;</code>
+    <h3>Tag &lt;strong&gt;</h3>
+    <p>Cria um texto <strong>Negrito Semântico</strong></p>
+    <code>&lt;strong&gt;Negrito Semântico&lt;/strong&gt;</code>
+    <h3>Tag &lt;i&gt;</h3>
+    <p>Cria um texto <i>Itálico Semântico</i></p>
+    <code>&lt;i&gt;Itálico Não-Semântico (Não recomendado)&lt;/i&gt;</code>
+    <h3>Tag &lt;em&gt;</h3>
+    <p>Cria um texto <em>Itálico Não-Semântico</em> (Não-Recomendado)</p>
+    <code>&lt;em&gt;Itálico Semântico&lt;/em&gt;</code>
+    <h3>Tag &lt;small&gt;</h3>
+    <p>Cria um <small>texto pequeno</small></p>
+    <code>&lt;small&gt;Texto pequeno&lt;/small&gt;</code>
+    <h3>Tag &lt;del&gt;</h3>
+    <p>Cria um <del>texto excluido</del> Semântico</p>
+    <code>&lt;del&gt;Texto Excluido&lt;/del&gt;</code>
+    <h3>Tag &lt;s&gt;</h3>
+    <p>Cria um <s>texto excluido</s> Não-Semântico (Não Recomendado)</p>
+    <code>&lt;s&gt;Texto Excluido&lt;/s&gt;</code>
+    <h3>Tag &lt;ins&gt;</h3>
+    <p>Cria um <ins>texto inserido</ins></p>
+    <code>&lt;ins&gt;Texto Inserido&lt;/ins&gt;</code>
+    <h3>Tag &lt;u&gt;</h3>
+    <p>Cria um <u>texto sublinhado</u> Não semântico (Não-Recomendado)</p>
+    <code>&lt;u&gt;Texto Inserido&lt;/u&gt;</code>
+    <h3>Tag &lt;sup&gt;</h3>
+    <p>Cria um <sup>texto pequeno em cima</sup></p>
+    <code>&lt;sup&gt;Texto para cima&lt;/sup&gt;</code>
+    <h3>Tag &lt;sub&gt;</h3>
+    <p>Cria um <sub>texto pequeno em baixo</sub></p>
+    <code>&lt;sub&gt;Texto para baixo&lt;/sub&gt;</code>
+    <h3>Tag &lt;abbr&gt;</h3>
+    <p>Cria um texto que aparece uma explicação ao <abbr title="Explicação do Texto">passar o mouse</abbr></p>
+    <code>&lt;abbr title="Explicação do Texto"&gt;Texto&lt;/abbr&gt;</code>
+    <h3>Tag &lt;mark&gt;</h3>
+    <p>Cria uma marcação estilo do <mark>marca texto</mark></p>
+    <code>&lt;mark&gt;Isto é um Texto Marcado&lt;/mark&gt;</code>
+    <h3>Tag &lt;q&gt;</h3>
+    <p>Cria uma pequena citação (quote)</p>
+    <code>&lt;q&gt;Citação&lt;/q&gt;</code><br>
+    <q>Citação</q>
+    <h3>Tag &lt;blockquote&gt;</h3>
+    <p>Cria uma citação maior</p>
+    <code>&lt;blockquote cite="link de um Livro"&gt;Citação de um Livro&lt;/blockquote&gt;</code>
+    <h3>Tag &lt;cite&gt;</h3>
+    <p>Define o título de um trabalho</p>
+    <code>&lt;p&gt;&lt;cite&gt;O Grito&lt;/cite&gt; de Edward Munch.&lt;/p&gt;</code>
+    <p><cite>O Grito</cite> de Edward Munch.</p>
+    <h3>Tag &lt;adress&gt;</h3>
+    <p>Cria um texto com informações de contato para o artigo ou o body mais próximo <wbr>se for body, vale para a página inteira</p>
+    <code>&lt;adress&gt;Tal Rua, de tal Cidade&lt;/adress&gt;</code><br>
+    <adress>Tal Rua, de tal Cidade</adress>
+    <h3>Tag &lt;bdo&gt;</h3>
+    <p>Usada para ter controle sobre a direção que aparece o texto, podendo ser da Esquerda para a Direita (dir="ltr") ou da Direita para a Esquerda (dir="rtl")</p>
+    <code>&lt;bdo dir="ltr"&gt;Texto da Esquerda para a Direita&lt;/bdo&gt;
+    &lt;bdo dir="rtl"&gt;Texto da Direita para a Esquerda&lt;/bdo&gt;</code>
+    <h3>Tag &lt;dfn&gt;</h3>
+<p>
+    Significa "definição de elemento" e serve para
+    criar definições
+</p>
+<code>&lt;p&gt;&lt;dfn title="HyperText Markup Language""&gt;HTML&lt;/dfn&gt; é a linguagem de marcação padrão para páginas web&lt;/p&gt;</code>
+<p><dfn title="HyperText Markup Languages"">HTML</dfn> é a linguagem de marcação padrão para páginas web</p>
+    <h2>Mídia</h2>
+    <hr>
+    <h3>Tag &lt;img&gt;</h3>
+    <p>Você pode colocar imagens armazenadas na próprio página usando a tag &lt;img&gt;</p>
+    <code>&lt;img src="minhaimagem.png"&gt;</code>
+    <h3>Tag &lt;picture&gt;</h3>
+    <p>Ele tenta carregar a primeira imagem, se não for possível carrega a segunda, se a segunda não for possível carrega a terceira e assim por diante.</p>
+    <p>Exemplo de imagem flexível (pode mudar de acordo com o tamanho da tela)</p>
+    <code>
+&lt;picture&gt;
+    &lt;source media="(max-width 750)" scrset="imagemgrande.png"&gt;
+    &lt;source media="(max-width 500)" srcset="imagemmedia.png"&gt;
+    &lt;img src="imagempequena.png" alt="imagem flexivel""&gt;
+&lt;/picture&gt;
+    </code>
+    <h3>Tag &lt;source&gt;</h3>
+    <p>Apresenta uma fonte de uma imagem aúdio ou vídeo para ser rederizado pela tag Pai</p>
+    <code>
+&lt;!--Para imagens--&gt;
+&lt;picture&gt;
+&lt;source&gt;
+&lt;source&gt;
+&lt;/picture&gt;
+
+&lt;!--Para imagens--&gt;
+&lt;picture&gt;
+&lt;source&gt;
+&lt;source&gt;
+&lt;/picture&gt;
+
+&lt;!--Para áudios--&gt;
+&lt;audio&gt;
+&lt;source&gt;
+&lt;source&gt;
+&lt;/audio&gt;
+
+&lt;!--Para vídeos--&gt;
+&lt;video&gt;
+&lt;source&gt;
+&lt;source&gt;
+&lt;/video&gt;
+    </code>
+    <h3>Tag &lt;video&gt;</h3>
+    <p>Você pode colocar vídeos armazenados no próprio site</p>
+    <code>&lt;video src="meuvideo.mp4 width=500 height=100 controls autoplay loop&gt;</code>
+    <p>As propriedades são controls autoplay loop e muted</p>
+    <h3>Tag &lt;iframe&gt;</h3>
+    <p>Você pode color vídeos armazenados em outros sites</p>
+    <code>&lt;iframe width=560 height=100 src="link do site" frameborder=0 allow="accelerometer" autoplay encrypted-media gyroscope picture-in-picture&gt;</code>
+    <h3>Tag &lt;audio&gt;</h3>
+
+    <h2>Links</h2>
+    <hr>
+    <h3>Tag &lt;a&gt;</h3>
+    <p>Você pode transformar textos, imagem vídeos e outros elementos em links</p>
+    <code>&lt;a href="link do site direcionado" target="_blank" rel="external"&gt;Texto Hyperlink&lt;/a&gt;</code>
+    <h2>Listas</h2>
+    <hr>
+    <h3>Tag &lt;li&gt;</h3>
+    <p>Tags &lt;li&gt; são utilizadas para ordenar elementos de uma lista como veremos a seguir</p>
+    <code>&lt;li&gt;Elemento de uma Lista&lt;/li&gt;</code>
+    <h3>Tag &lt;ul&gt;</h3>
+    <p>É possivel criar Listas Não-Ordenadas através da tag &lt;ul&gt;</p>
+<code>
+<mark class="commenth">&lt;!--
+Alguns possíves parâmetros são:
+&lt;ul type="square"&gt;
+&lt;ul type="disc"&gt;
+&lt;ul type="circle"&gt;
+--&gt;</mark>
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;li&gt;Item 4&lt;/li&gt;
+    &lt;li&gt;Item 5&lt;/li&gt;
+&lt;/ul&gt;
+</code>
+    <p>Resultado:</p>
+<pre>
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+</ul>
+<h3>Tag &lt;ol&gt;</h3>
+</pre>
+    <p>Também é possível criar Listas Ordenadas com a tag &lt;ol&gt;</p>
+    <code>
+<mark class="commenth">&lt;!--
+Alguns possíveis parâmetros são:
+&lt;ol type="a"&gt; para Númeração com Letras Minúsculas
+&lt;ol type="A"&gt; para Númeração por Letras Maiúsculas
+&lt;ol type="1" start=1&gt; para Númeração Decimal
+&lt;ol type="I"&gt; para Númeração Romana Maiúscula
+&lt;ol type="i"&gt; para Númeração Romana Minuscula
+--&gt;</mark>
+&lt;ol&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;li&gt;Item 4&lt;/li&gt;
+    &lt;li&gt;Item 5&lt;/li&gt;
+&lt;/ol&gt;
+    </code>
+    <p>Resultado:</p>
+    <ol type="1" start=1>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+    <h3>Tag &lt;details&gt;</h3>
+    <p>Cria um lugar para colocar detalhes, usado em conjunto com a tag &lt;summary&gt;</p>
+<code>
+&lt;details&gt;&lt;summary&gt;Título do Sumário&lt;/summary&gt;
+    Descrição do Sumário
+&lt;/details&gt;
+</code>
+    <p>Resultado: </p>
+    <details><summary>Título do Sumário</summary>
+        Descrição do Sumário
+    </details>
+    <h3>Tag &lt;summary&gt;</h3>
+    <p>Você pode criar sumários com a Tag &lt;summary&gt;, usando em conjunto com a tag &lt;details&gt;</p>
+    <code>
+&lt;details&gt;&lt;summary&gt;Título do Sumário&lt;/summary&gt;
+Descrição do Sumário
+&lt;/details&gt;
+    </code>
+    <p>Resultado:</p>
+    <details><summary>Título do Sumário</summary>
+        Descrição do Sumário
+    </details>
+    <h3>Tag &lt;dl&gt;</h3>
+    <p>Lista de Descrições (Description List), é uma tag usada para criar uma lista de várias descricões usando as outras tags &lt;dt&gt; e &lt;dd&gt;</p>
+<code>
+&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;Linguagem de Marcação&lt;/dd&gt;
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Linguagem de Estilização&lt;/dd&gt;
+&lt;/dl&gt;
+</code>
+    <p>Resultado:</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de Marcação</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de Estilização</dd>
+    </dl>
+    <h3>Tag &lt;dt&gt;</h3>
+    <p>Cria um título para sua descrição</p>
+    <code>&lt;dt&gt;HTML&lt;/dt&gt;</code>
+    <h3>Tag &lt;dd&gt;</h3>
+    <p>Cria uma descrição para seu título de descrição</p>
+    <code>&lt;dd&gt;Linguagem de Marcação&lt;/dd&gt;</code>
+    <h2>Estrutura</h2>
+    <hr>
+    <h3>Tag &lt;span&gt;</h3>
+    <p>Cria um Span, uma divisão que se adapta com o tamanho do texto</p>
+    <code>&lt;span&gt;&lt;p&gt;Parágrafo&lt;/p&gt;&lt;/span&gt;</code>
+    <span style="background-color: tomato; color: black;">Texto com Span</span>
+    <h3>Tag &lt;div&gt;</h3>
+    <p>Cria uma Div, uma divisão que é da largura da página</p>
+    <code>&lt;div&gt;&lt;p&gt;Parágrafo&lt;/p&gt;&lt;/div&gt;</code>
+    <div style="background-color: lightblue; color: black;">Texto com Div</div>
+    <h3>Tag &lt;article&gt;</h3>
+    <p>Cria um espaço separado para texto individualmente <wbr>pode ser um artigo de jornal, um post etc</p>
+    <code>
+&lt;article&gt;
+    &lt;p&gt;Espaço separado individualmente para texto&lt;/p&gt;
+&lt;/article&gt;
+    </code>
+    <h3>Tag &lt;aside&gt;</h3>
+    <p>Usado para criar um conteúdo que se referencie a um artigo</p>
+    <code>
+&lt;aside&gt;
+    &lt;p&gt;Conteúdo ao lado de um artigo&lt;/p&gt;
+&lt;/aside&gt;
+    </code>
+    <h3>Tag &lt;section&gt;</h3>
+    <p>Usado para criar uma seção na página</p>
+    <code>
+&lt;section&gt;
+    &lt;p&gt;Seção&lt;/p&gt;
+&lt;/section&gt;
+    </code>
+    <h3>Tag &lt;header&gt;</h3>
+    <p>Usado para exibir a cabeça (parte de cima) da página</p>
+    <code>
+&lt;header&gt;
+    &lt;p&gt;Cabeça da página&lt;/p&gt;
+&lt;/header&gt;
+    </code>
+    <h3>Tag &lt;main&gt;</h3>
+    <p>Usado para exibir o conteúdo principal da página.</p>
+    <code>
+&lt;main&gt;
+    &lt;p&gt;Conteúdo principal&lt;/p&gt;
+&lt;/main&gt;
+    </code>
+    <h3>Tag &lt;footer&gt;</h3>
+    <p>Cria o rodapé (canto em baixo) da página</p>
+    <code>
+&lt;footer&gt;
+    &lt;p&gt;Canteúdo de Rodapé&lt;/p&gt;
+&lt;/footer&gt;
+    </code>
+    <h2>Inputs</h2>
+    <hr>
+    <h3>Tag &lt;form&gt;</h3>
+    <h3>Tag &lt;input&gt;</h3>
+    <h3>Tag &lt;label&gt;</h3>
+    <h3>Tag &lt;textarea&gt;</h3>
+    <p>Cria um input de texto</p>
+    <code>&lt;textarea&gt;Input de Texto&lt;/textarea&gt;</code>
+    <br>
+    <textarea style="background-color: black; color: white">Input de Texto</textarea>
+    <h3>Tag &lt;button&gt;</h3>
+    <h3>Tag &lt;select&gt;</h3>
+    <p>Cria um campo onde se pode selecionar uma opção</p>
+    <h3>Tag &lt;option&gt;</h3>
+    <p>Determina as opções da tag select</p>
+    <code>
+&lt;select&gt;
+    &lt;option&gt;1&lt;/option&gt;
+    &lt;option&gt;2&lt;/option&gt;
+    &lt;option&gt;3&lt;/option&gt;
+&lt;/select&gt;
+    </code>
+    <select>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+    </select>
+    <h3>Tag &lt;optgroup&gt;</h3>
+    <p>Serve para criar grupos de opções</p>
+    <h2>Tabelas</h2>
+    <h3>Tag &lt;table&gt;</h3>
+<p>É usado para criar uma nova tabela.</p>
+    <h3>Tag &lt;tr&gt;</h3>
+<p>Do inglês "table row" cria uma nova linha na tabela</p>
+    <h3>Tag &lt;th&gt;</h3>
+<p>Determina o título de uma coluna da tabela</p>
+    <h3>Tag &lt;td&gt;</h3>
+<p>
+    Do inglês "table data" determina a informação
+    de uma célula da tabela.
+</p>
+    <h3>Tag &lt;caption&gt;</h3>
+    <p>Serve para definir o título de uma tabela, deve ser o primeiro filho da tag table</p>
+    <code>
+&lt;table&gt;
+    &lt;caption&gt;Título da Tabela&lt;/caption&gt;
+&lt;/table&lt;
+    </code>
+    <h2>Avançado</h2>
+    <hr>
+    <h3>Tag &lt;style&gt;</h3>
+    <p>Usado na tag head para incorporar internamento um estilo CSS</p>
+    <h3>Tag &lt;link&gt;</h3>
+    <p>Usado para incorporar algo externo ao head</p><br>
+    <p>Alguns exemplos desse uso são: </p>
+    <code>&lt;link rel="shortcut icon" href="imagem.ico" type="image/x-icon"&gt;</code>
+    <p>Coloca um icone qua aparece na aba da página, image.ico é o caminho para o arquivo de imagem.</p>
+    <code>&lt;link href="style.css" rel="stylesheet" type="text/css"/&gt;</code>
+    <p>Incorpora um arquivo css no Documento HTML</p>
+    <h3>Tag &lt;script&gt;</h3>
+    <p>Usado para incorporar um script de Javascript no documento HTML</p>
+    <code>
+&lt;script&gt;
+    document.write("Texto imprimido por script");
+&lt;/script&gt;
+    </code>
+    <h3>Tag &lt;noscript&gt;</h3>
+    <p>
+        Serve para exibir um conteúdo alternativo
+        caso o navegador não suporte script.
+    </p>
+    <code>
+&lt;noscript&gt;
+    &lt;p&gt;Seu navegador não suporta scripts &lt;/p&gt;
+&lt;/noscript&gt;
+    </code>
+    <h2>Tags Obsoletas</h2>
+    <hr>
+    <p>Não é recomendavel usar tags obsoletas porque já não são mais suportadas pelo HTML5, sendo que a qualquer momento podem parar de funcionar.</p>
+    <p>As tags Obsoletas são as seguintes</p>
+    <mark style="color: red; font-weight: bold;"><ol>
+        <li>&lt;acronym&gt;</li>
+        <li>&lt;applet&gt;</li>
+        <li>&lt;basefont&gt;</li>
+        <li>&lt;big&gt;</li>
+        <li>&lt;center&gt;</li>
+        <li>&lt;dir&gt;</li>
+        <li>&lt;font&gt;</li>
+        <li>&lt;frame&gt;</li>
+        <li>&lt;frameset&gt;</li>
+        <li>&lt;noframes&gt;</li>
+        <li>&lt;strike&gt;</li>
+        <li>&lt;tt&gt;</li>
+    </ol></mark>
+    </main>
+    <footer>
+        <button><a href="CSS3.html">Guia CSS</a></button>
+        <br>
+        <button><a href="index.html">Página Principal</a></button>
+    </footer>
+</body>
+</html>
