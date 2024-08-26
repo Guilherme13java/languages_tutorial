@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="images/CSS.png">
+    <title>Guia CSS3</title>
+    <style>
+        main {
+            border-color: deepskyblue;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: deepskyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Guia de CSS3</h1>
+        <hr>
+        <img style="margin: auto; display: flex;" src="images/CSS.png" width="10%">
+        <h2>Introdução</h2>
+        <h3>Existem 3 formas de implementar as CSS</h3>
+        <ul type="square">
+            <li>Estilo Inline</li>
+            <p>Quando você coloca diretamente CSS nos parâmetros da tag HTML
+                <code>&lt;p<span> style="color: red"</span>&gt; Estilo Inline&lt;/p&gt;</code>
+                <li>Estilo Interno</li>
+            <p>Quando você usa a tag style no head do arquivo HTML para usar as CSS</p>
+            <code style="color: tomato">
+&lt;style&gt;
+p {
+    color: red;
+}
+&lt;/style&gt;
+</code>
+            <li>Estilo Externo</li>
+            <p>Quando você aplica o Estilo fora do arquivo HTML, recomendado usar quando for aplicar em vários sites</p>
+            <p>style.css:</p>
+            <code style="color: tomato">
+p {
+    color: red;
+}
+</code>
+            <p>index.html (&lt;head&gt;):</p>
+            <code>&lt;link href="style.css" rel="stylesheet" type="text/css"/&gt;</code>
+        </ul>
+        <h3>Comentários</h3>
+        <p>
+            Para adicionar um comentário no CSS basta adicionar /*
+            no início do comentário e */ no fim do comentário, exemplo:
+        </p>
+        <code><mark class="commentc">/*Isto é um comentário*/</mark></code>
+        <h2>Cores no CSS</h2>
+        <h3>Cor Nomeada</h3>
+        <p>
+            Uma cor nomeada é uma cor já para aplica-lá
+            basta apenas usar o seu nome em inglês
+            com todos caracteres minúsculo sem espaço
+        </p>
+        <code>white;</code>
+        <details>
+            <summary>Nome de todas as Cores Nomeadas</summary>
+            <ol>
+                <li style="background-color: aliceblue">aliceblue</li>
+                <li>antiquewhite</li>
+                <li>aqua</li>
+                <li>aquamarine</li>
+                <li>azure</li>
+                <li>beige</li>
+                <li>bisque</li>
+                <li>black</li>
+                <li>blancehedalmond</li>
+                <li>blue</li>
+                <li>blueviolet</li>
+                <li>brown</li>
+                <li>burlywood</li>
+                <li>cadetblue</li>
+                <li>chartreuse</li>
+                <li>chocolate</li>
+                <li>coral</li>
+                <li>cornflowerblue</li>
+                <li>cornsilk</li>
+                <li>crimson</li>
+                <li>cyan</li>
+                <li>darkblue</li>
+                <li>darkcyan</li>
+                <li>darkgoldenrod</li>
+                <li>darkgray</li>
+                <li>darkgreen</li>
+                <li>darkgrey</li>
+                <li>darkkhaki</li>
+                <li>darkmagenta</li>
+                <li>darkolivegreen</li>
+                <li>darkorange</li>
+                <li>darkorchid</li>
+                <li>darkred</li>
+                <li>darksalmon</li>
+                <li>darkseagreen</li>
+                <li>darkslateblue</li>
+                <li>darkslategray</li>
+                <li>darkslategrey</li>
+                <li>darkturquoise</li>
+                <li>darkviolet</li>
+                <li>deeppink</li>
+                <li>deepskyblue</li>
+                <li>dimgray</li>
+                <li>dimgrey</li>
+                <li>dodgerblue</li>
+                <li>firebrick</li>
+                <li>floralwhite</li>
+                <li>forestgreen</li>
+                <li>fuchsia</li>
+                <li>gainsboro</li>
+                <li>ghostwhite</li>
+                <li>gold</li>
+                <li>goldenrod</li>
+                <li>gray</li>
+                <li>green</li>
+                <li>greenyellow</li>
+                <li>grey</li>
+                <li>honeydew</li>
+                <li>hotpink</li>
+                <li>indianred</li>
+                <li>indigo</li>
+                <li>ivory</li>
+                <li>khaki</li>
+                <li>lavender</li>
+                <li>lavenderblush</li>
+                <li>lawngreen</li>
+                <li>lemonchiffon</li>
+                <li>lightblue</li>
+                <li>lightcoral</li>
+                <li>lightcyan</li>
+                <li>lightgoldenrotyellow</li>
+                <li>lightgray</li>
+                <li>lightgreen</li>
+                <li>lightgrey</li>
+                <li>lightpink</li>
+                <li>lightsalmon</li>
+                <li>lightseagreen</li>
+                <li>lightskyblue</li>
+                <li>lightslategray</li>
+                <li>lightslategrey</li>
+                <li>lightsteelblue</li>
+                <li>lightyellow</li>
+                <li>lime</li>
+                <li>limegreen</li>
+                <li>linen</li>
+                <li>magenta</li>
+                <li>maroon</li>
+                <li>mediumaquamarine</li>
+                <li>mediumblue</li>
+                <li>mediumorchid</li>
+                <li>mediumpurple</li>
+                <li>mediumseagreen</li>
+                <li>mediumslateblue</li>
+                <li>mediumspringgreen</li>
+                <li>mediumturquoise</li>
+                <li>mediumvioletred</li>
+                <li>midnightblue</li>
+                <li>mintcream</li>
+                <li>mistyrose</li>
+                <li>moccasin</li>
+                <li>navajowhite</li>
+                <li>navy</li>
+                <li>oldlate</li>
+                <li>olive</li>
+                <li>olivedrab</li>
+                <li>orange</li>
+                <li>orangered</li>
+                <li>orchid</li>
+                <li>palegoldenrod</li>
+                <li>palegreen</li>
+                <li>paleturquoise</li>
+                <li>palevioletred</li>
+                <li>papayawhip</li>
+                <li>peachpuff</li>
+                <li>peru</li>
+                <li>pink</li>
+                <li>plum</li>
+                <li>powderblue</li>
+                <li>purple</li>
+                <li>rebeccapurple</li>
+                <li>red</li>
+                <li>rosybrown</li>
+                <li>royalblue</li>
+                <li>saddlebrown</li>
+                <li>salmon</li>
+                <li>sandybrown</li>
+                <li>seagreen</li>
+                <li>seashell</li>
+                <li>sienna</li>
+                <li>silver</li>
+                <li>skyblue</li>
+                <li>slateblue</li>
+                <li>slategray</li>
+                <li>slategrey</li>
+                <li>snow</li>
+                <li>springgreen</li>
+                <li>steelblue</li>
+                <li>tan</li>
+                <li>teal</li>
+                <li>thistle</li>
+                <li>tomato</li>
+                <li>transparent</li>
+                <li>turquoise</li>
+                <li>violet</li>
+                <li>wheat</li>
+                <li>white</li>
+                <li>whitesmoke</li>
+                <li>yellow</li>
+                <li>yellowgreen</li>
+            </ol>
+        </details>
+        <!--
+azure
+beige
+bisque
+black
+blancehedalmond
+burlywood
+chartreuse
+chocolate
+coral
+cornsilk
+crimson
+--
+darkkhaki
+darkmagenta
+darkorange
+darkorchid
+darkred
+darksalmon
+darkturquoise
+darkviolet
+deeppink
+firebrick
+fuchsia
+gainsboro
+honeydew
+hotpink
+indianred
+indigo
+ivory
+khaki
+lavender
+lavenderblush
+lemonchiffon
+lightcoral
+lightpink
+lightsalmon
+lightyellow
+lime
+linen
+magenta
+maroon
+mediumorchid
+mediumpurple
+mediumturquoise
+mediumvioletred
+mintcream
+mistyrose
+moccasin
+navy
+oldlate
+olive
+olivedrab
+orange
+orangered
+orchid
+paleturquoise
+palevioletred
+papayawhip
+peachpuff
+peru
+pink
+plum
+purple
+rebeccapurple
+red
+salmon
+seashell
+sienna
+silver
+snow
+tan
+teal
+thistle
+tomato
+transparent
+turquoise
+violet
+wheat
+yellow
+-->
+        <details>
+            <summary>Cores Nomeadas</summary>
+            <details>
+                <summary>blue</summary>
+                <ol>
+                    <li>aliceblue</li>
+                    <li>blueviolet</li>
+                    <li>cadetblue</li>
+                    <li>cornflowerblue</li>
+                    <li>darkblue</li>
+                    <li>darkslateblue</li>
+                    <li>deepskyblue</li>
+                    <li>dodgerblue</li>
+                    <li>lightblue</li>
+                    <li>lightskyblue</li>
+                    <li>lightsteelblue</li>
+                    <li>mediumblue</li>
+                    <li>mediumslateblue</li>
+                    <li>powderblue</li>
+                    <li>midnightblue</li>
+                    <li>royalblue</li>
+                    <li>skyblue</li>
+                    <li>slateblue</li>
+                    <li>steelblue</li>
+                    <li>aqua</li>
+                    <li>aquamarine</li>
+                    <li>mediumaquamarine</li>
+                </ol>
+            </details>
+            <details>
+                <summary>white</summary>
+                <ol>
+                    <li>antiquewhite</li>
+                    <li>floralwhite</li>
+                    <li>ghostwhite</li>
+                    <li>navajowhite</li>
+                    <li>whitesmoke</li>
+                </ol>
+            </details>
+            <details>
+                <summary>brown</summary>
+                <ol>
+                    <li>rosybrown</li>
+                    <li>saddlebrown</li>
+                    <li>sandybrown</li>
+                </ol>
+            </details>
+            <details>
+                <summary>cyan</summary>
+                <ol>
+                    <li>darkcyan</li>
+                    <li>lightcyan</li>
+                </ol>
+            </details>
+            <details>
+                <summary>gold</summary>
+                <ol>
+                    <li>darkgoldenrod</li>
+                    <li>goldenrod</li>
+                    <li>lightgoldenrotyellow</li>
+                    <li>palegoldenrod</li>
+                </ol>
+            </details>
+            <details>
+                <summary>gray</summary>
+                <ol>
+                    <li>grey</li>
+                    <li>darkgray</li>
+                    <li>darkgrey</li>
+                    <li>darkslategray</li>
+                    <li>darkslategrey</li>
+                    <li>dimgray</li>
+                    <li>dimgrey</li>
+                    <li>lightgray</li>
+                    <li>lightgrey</li>
+                    <li>lightslategray</li>
+                    <li>lightslategrey</li>
+                    <li>slategray</li>
+                    <li>slategrey</li>
+                </ol>
+            </details>
+            <details>
+                <summary>green</summary>
+                <ol>
+                    <li>darkgreen</li>
+                    <li>darkolivegreen</li>
+                    <li>darkseagreen</li>
+                    <li>forestgreen</li>
+                    <li>greenyellow</li>
+                    <li>lawngreen</li>
+                    <li>lightgreen</li>
+                    <li>lightseagreen</li>
+                    <li>limegreen</li>
+                    <li>mediumseagreen</li>
+                    <li>mediumspringgreen</li>
+                    <li>palegreen</li>
+                    <li>seagreen</li>
+                    <li>springgreen</li>
+                    <li>yellowgreen</li>
+                </ol>
+            </details>
+            <details>
+                <summary></summary>
+                <ol>
+                    <li></li>
+                </ol>
+            </details>
+        </details>
+        <h3>Hexadecimal</h3>
+        <p>representa uma cor Hexadecimal</p>
+        <code>#000000;</code>
+        <h3>RGB</h3>
+        <p>
+            rgb é uma função que retorna uma cor
+            baseado na intensidade da cor vermelha
+            (primeiro parâmetro), cor verde (segundo
+            parâmetro) e na cor azul (terceiro parâmetro)
+            todos sendo um número de 0 até 255, sendo 0
+            a ausência da cor e 255 a total intensidade
+            da cor.
+        </p>
+        <code>rgb(0-255, 0-255, 0-255);</code>
+        <h3>HSL</h3>
+        <p>
+            hsl é uma função que retorba uma cor baseado
+            no ângulo (primeiro parâmetro), porcentagem
+            de saturação (segundo parâmetro) e porcentagem
+            de brilho (terceiro parâmetro),
+            sendo o deg e % opcionais.
+        </p>
+        <code>hsl(0deg-360deg, 0%-100%, 0%-100%);</code>
+        <h3>Propriedade color</h3>
+        <p>Recebe uma cor, e muda a cor do texto</p>
+        <code>
+p{
+    color: red;
+}
+</code>
+        <h3>Propriedade background-color</h3>
+        <p>Recebe uma cor, e muda a cor de trás</p>
+        <code>
+p{
+    background-color: red;
+}
+</code>
+        <h3>Seletores, classes e id</h3>
+        <p>
+            Um seletor muda todos os elementos que
+            pertencem a tag do seletor, ex:
+        </p>
+        <p>Arquivo.html</p>
+        <code>&lt;p&gt;Texto&lt;/p&gt;</code>
+        <p>Arquivo.css</p>
+        <code>
+p{ /*o seletor sendo p, todas as tags p vao usar isso*/
+    color: red;
+}
+p, h1{ /*você pode usar mais de um seletor usando vírgulas*/
+    background-color: green;
+}
+*{ /*Você pode referenciar todos os elementos usando o asterisco*/
+    margin: 20px;
+}
+</code>
+        <p>
+            Um id serve para referenciar apenas
+            um elemento em específico, ex:
+        </p>
+        <p>Arquivo.html</p>
+        <code>
+&lt;p id="texto1"&gt;Texto vermelho&lt;/p&gt;
+&lt;p&gt;Texto normal&lt;/p&gt;
+</code>
+        <p>Arquivo.css</p>
+        <code>
+#texto1{
+    color: red;
+}
+</code>
+        <p>
+            Uma classe pode ser usada para
+            referenciar mais de um elemento,
+            mas não necessáriamemte todos, ex:
+        </p>
+        <p>Arquivo.html</p>
+        <code>
+&lt;p class="vermelho"&gt;Texto vermelho&lt;/p&gt;
+&lt;p class="vermelho"&gt;Texto vermelho 2&lt;/p&gt;
+&lt;p&gt;Texto normal&lt;/p&gt;
+</code>
+        <p>Arquivo.css</p>
+        <code>
+.vermelho{
+    color: red;
+}
+</code>
+        <h3>Fontes</h3>
+        <p>
+            Uma fonte de um texto pode ser definida
+            com a propriedade font-family
+        </p>
+        <code>
+p{
+    font-family: verdana;
+}
+</code>
+        <p>Você pode adicionar callbacks usando virgula</p>
+        <code>
+p{
+    font-family: verdana, arial;
+}
+/*Se não for possível usar a fonte verdana, a arial irá ser usada*/
+</code>
+        <p>
+            Você pode usar a propreidade font-size para modificar o tamanho
+            da fonte
+        </p>
+        <code>
+p{
+    font-size: 2em;
+}
+</code>
+        <p>
+            Você pode usar a propriedsde fonte weight para deixar
+            em negrito
+        </p>
+        <code>
+p{
+    font-weight: bold;
+}
+/*bold para negrito, normal para normal*/
+</code>
+        <p>Você pode usar a propriedade font-style para deixar em itálico</p>
+        <code>
+p{
+    font-style: italic;
+}
+/*italic para itálico, normal para normal*/
+</code>
+        <p>Você pode usar fontes de um arquivo local usando @font-face</p>
+        <code>
+@font-face{
+    url(MinhaFonte.ttf);
+    font-family: Fonte;
+}
+p{
+    font-family: Fonte;
+}
+</code>
+        <details>
+            <summary>Lista das fontes mais suportadas nos navegadores: </summary>
+            <ul>
+                <li>Arial (sans-serif)</li>
+                <p style="font-family: Arial;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sed non aperiam aliquid nulla
+                    tempora inventore libero velit dolorem doloribus tempore dicta optio, reprehenderit quod, quia
+                    exercitationem at repellat delectus?
+                </p>
+                <li>Verdana (sans-serif)</li>
+                <p atyle="font-family: Verdana">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic in iure perspiciatis temporibus illo!
+                    Pariatur a repudiandae deleniti praesentium blanditiis sunt odit iusto voluptates, eaque accusamus
+                    itaque et beatae aliquid!
+                </p>
+                <li>Tahoma (sans-serif)</li>
+                <p style="font-family: Tahoma;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio earum voluptates nemo ad. Tempora
+                    assumenda enim nostrum numquam eligendi doloribus nobis minus laborum vitae eum accusamus, mollitia
+                    necessitatibus molestias soluta!
+                    </pre>
+                    <li>Trebuchet MS (sans-serif)</li>
+                <p style="font-family: 'Trebuchet MS';">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempora molestiae, cumque
+                    eligendi ipsam quasi corrupti debitis exercitationem minima vitae a. Ipsum rem atque esse dolore
+                    deserunt et eveniet maxime.
+                </p>
+                <li>Times New Roman (serif)</li>
+                <p style="font-family: 'Times New Roman';">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, rerum facilis. Dicta,
+                    pariatur inventore repellendus assumenda deserunt minus non vero illum! Amet, sed? Minus temporibus
+                    obcaecati dolorum placeat adipisci at.
+                </p>
+                <li>Georgia (serif)</li>
+                <p style="font-family: Georgia;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga vero quibusdam voluptas iure
+                    asperiores dolore nam rem provident sint nisi. Quibusdam, dolores in eaque cupiditate adipisci ea
+                    error debitis magni!
+                </p>
+                <li>Garamond (serif)</li>
+                <p style="font-family: Garamond;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam alias dolor amet, veniam pariatur autem
+                    tenetur dolorum nulla, iure aliquam quas sed saepe inventore! Aspernatur exercitationem rem neque
+                    vel sed!
+                </p>
+                <li>Courier New (monospace)</li>
+                <p style="font-family: 'Courier New';">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repellendus voluptate neque explicabo
+                    itaque voluptatum rerum quisquam. Ipsam, quos libero voluptatem veritatis quasi sed accusantium
+                    soluta vero in deserunt magnam?
+                </p>
+                <li>cursive</li>
+                <p style="font-family: cursive">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, vero repellendus ipsam
+                    repudiandae quia veritatis, deserunt dolorum sit, quo impedit nesciunt dolores? Aut accusamus harum,
+                    delectus alias dolore quo provident.
+                </p>
+            </ul>
+        </details>
+        <h3>Largura e Altura</h3>
+        <p>
+            A largura e altura podem ser
+            definidas pelas propriedades
+            width e height width e height
+            também podem ser especificadas por cima
+            (height-top), baixo (height-bottom), direita
+            (width-right) e esquerda (width-left).
+        </p>
+        <h3>Preenchimento</h3>
+        <p>O preenchimento (padding) definem o que há entre o conteúdo e as bordas.
+            Podem ser usados as propriedades:
+        </p>
+        <code>
+padding (para todos)
+padding-top (para cima)
+padding-bottom (para baixo)
+padding-right (para a direita)
+padding-left (para a esquerda)
+</code>
+        <h3>Bordas</h3>
+        <p>As bordas (border) definem o que há entre o preenchimento e as margens, podem ser usado as propriedades</p>
+        <code>
+border-style: solid;
+border-width: 1em;
+border-color: red; (cor da borda)
+
+/*Essas 3 propriedades podem ser definidas em uma só*/
+border: solid 1em red;
+/*também pode ser usado ao invés de border
+border-top, border-bottom, border-right, border-left
+para especificar o lado da borda*/
+
+/*Também existem outras propriedades*/
+border-radius: 1em; (arredondamento da borda)
+</code>
+        <h3>Margens</h3>
+        <p>
+            Margem (margin) é o que fica em volta de um elemento,
+            pode se usar auto no argumento para definir sempre a posição no lado ou no centro da tela
+            seu tamanho pode ser definido pelas propriedades:
+        </p>
+        <code>
+margin: 1em; (para todos, se definido como auto ficará no centro da tela)
+
+margin-top: 1em; (para cima, se definido como auto ficará no topo da tela)
+
+margin-bottom: 1em (para baixo, se definido como auto ficará em baixo da tela)
+
+margin-right: 1em (para direita, se definido como auto ficará na direita da tela)
+
+margin-left: 1em; (para a esquerda, se definido como auto ficará na esquerda da tela)
+</code>
+        <h3>Sombras</h3>
+        <p>Você pode definir uma sombra quadrada (box-shadow) ou definir uma sombra sobre um texto (text-shadow)</p>
+        <code>
+/*sombra sobre um texto*/
+p{
+    text-shadow: 3px 3px 5px red;
+    /*
+    primeiro argumento: distancia de largura sobre a sombra
+    segundo argumento: distancia de altura sobre a sombra
+    terceiro argumento: dispersão da sombra
+    quarto argumento: cor da sombra
+    */
+}
+
+/*Você pode usar mais de uma sombra dessa forma*/
+h1{
+    text-shadow: 3px 3px 5px red, -3px -3px 5px blue;
+}
+
+/*sombra sobre um quadrado*/
+div{
+    box-shadow: 3px 3px 5px black;
+
+    /*Os argumentos e as multiplas sombras funcionam da mesma forma que a da propriedade text-shadow*/
+}
+</code>
+        <h3>Float</h3>
+        <p>
+            Você pode usar a propriedade float para fazer um elemento
+            ficar ao lado do outro
+        </p>
+        <p>Arquivo.html</p>
+        <code>
+&lt;img src="imagem.png" id="imagem"&gt;
+&lt;p id="texto"&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa maxime iusto id ad sed. Dicta, reprehenderit praesentium! Obcaecati eaque temporibus, dolor laboriosam iste dicta dolores maiores dolorum veritatis quae iusto.&lt;/p&gt;
+</code>
+        <p>Arquivo.css</p>
+        <code>
+/*Os possíveis argumentos para a propriedade float é right e left*/
+#imagem{
+    margin-left: auto;
+    float: left;
+}
+</code>
+        <p>Se caso o elemento que estiver com float sair do elemento pai, você pode usar a propriedade display com o
+            argumento flow-root, exemplo:</p>
+        <code>
+body{
+    display: flow-root;
+}
+</code>
+        <h3>Overflow</h3>
+        <p>Overflow é uma propriedade que pode ser usada quando o conteúdo não cabe no elemento</p>
+        <code>
+div{
+    overflow: visible; /*O que é definido por padrão*/
+    overflow: hidden; /*Tdodo conteúdo que não cabe ficará escondido, mas você ainda pode obter o texto completo copiando e colando*/
+
+    overflow: clip; /*comumente usado junto com a propriedade overflow-clip-margin*/
+    overflow-clip-margin: 13px;/*define quando que o conteúdo poderá escapar*/
+    oveflow: scroll; /*Você poderá scrollar pelo conteúdo que escapa do elemento, mas mesmo que o conteúdo não escape ainda apareceá o menu de scrollar*/
+
+    overflow: auto; /*mesma coisa que o scroll, única diferença é que não aparece o menu de scroll quando o conteúdo não escapa*/
+}
+</code>
+        <h3>Displays</h3>
+        <p>
+            A propriedade display permite mudar se um elemento é block (Toma todo o espaço horizontal e o background é
+            do tamanho pode ser definida pelo width e height)
+        </p>
+        <ul>
+            <li>block</li>
+            <p>
+                Toma todo o espaço horizontal e a largura e altura do background são definidos pelo width e height.
+                Um exemplo de block por padrão é a tag div, mas pode
+                ser alterada com a propriedade display.
+            </p>
+            <li>inline</li>
+            <p>
+                Não toma o espaço horizontal e o background é definido pelo conteúdo.
+                Um exemplo de inline por padrão é a tag span, mas pode
+                ser alterada com a propriedade display.
+            </p>
+            <li>inline-block</li>
+            <p>
+                O background é definido pelo width e height mas não
+                ocupa todo o espaço horizontal.
+            </p>
+            <li>hidden</li>
+            <p>
+                O elemento não toma espaço nenhum e o conteúdo não
+                aparece, é bem parecido com propriedade visibility: hidden; que faz o elemento desaparecer mas o espaço
+                continua tomado.
+            </p>
+        </ul>
+        <h3>Dimensionando Elementos</h3>
+        <h4>box-sizing</h4>
+        <p>
+            Você pode fazer um elemento ficar ao lado do outro mesmo
+            possuindo uma borda definindo a propriedade box-sizing para border-box;
+        </p>
+        <p>Arquivo.html</p>
+        <code>
+&lt;div style="bakcground-color: aliceblue"&gt;
+&lt;p&gt;Primeira Caixa&lt;/p&gt;
+&lt;/div&gt;
+&lt;div style="background-color: tomato"&gt;
+&lt;p&gt;Segunda Caixa&lt;/p&gt;
+&lt;/div&gt;
+</code>
+        <p>Arquivo.css</p>
+        <code>
+div{
+    border: 2px solid;
+    box-sizing: border-box;
+    background-color: tomato;
+    float: right;
+}
+</code>
+        <div style="border: 2px solid; background-color: aliceblue; box-sizing: border-box; float: left;">
+            <p>Caixa 1</p>
+        </div>
+        <div style="border: 2px solid; background-color: tomato; box-sizing: border-box; float: left;">
+            <p>Caixa 2</p>
+        </div>
+        <br><br>
+        <h3>Altura e Largura Máxima, Altura e Largura Mínima</h3>
+        <p>
+            Você pode definir a altura mínima com a propriedade min-height, a altura máxima com max-height, a largura
+            mínima com min-width e a largura máxima com max-width.
+        </p>
+        <h3>Posição</h3>
+        <p>Você pode mudar a posição de um elemento com as propriedades top e left</p>
+        <code>
+div{
+    top: 50px;
+    left: 50px;
+}
+        </code>
+        <h3>Pseudo-classes e Pseudo-elementos</h3>
+        <p></p>
+        <h3>Transform</h3>
+        <p></p>
+    </main>
+    <footer>
+        <button><a href="HTML5.html">Voltar ao Guia HTML</a></button>
+        <br>
+        <button><a href="index.html">Página Principal</a></button>
+    </footer>
+</body>
+
+</html>
